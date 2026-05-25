@@ -22,12 +22,12 @@ const navItems = [
 const socialItems = [
   {
     label: "GitHub",
-    href: "https://github.com/yourgithub",
+    href: "https://github.com/sanjanalaware",
     icon: FaGithub,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/yourlinkedin",
+    href: "https://www.linkedin.com/in/sanjana-l-2364361b2/",
     icon: FaLinkedin,
   },
 ];
@@ -114,7 +114,9 @@ const Navbar = () => {
           <button
             type="button"
             onClick={() => setMenuOpen((current) => !current)}
-            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              menuOpen ? "Close navigation menu" : "Open navigation menu"
+            }
             aria-expanded={menuOpen}
             className="grid h-11 w-11 place-items-center rounded-full border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] transition hover:bg-[var(--accent-soft)] lg:hidden"
           >
@@ -126,9 +128,7 @@ const Navbar = () => {
       <motion.div
         initial={false}
         animate={
-          menuOpen
-            ? { height: "auto", opacity: 1 }
-            : { height: 0, opacity: 0 }
+          menuOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }
         }
         transition={{ duration: 0.28, ease: "easeOut" }}
         className="overflow-hidden border-t border-[var(--border)] bg-[var(--bg)]/95 lg:hidden"
@@ -139,11 +139,14 @@ const Navbar = () => {
               <motion.a
                 key={item.href}
                 initial={{ opacity: 0, x: -12 }}
-                animate={menuOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: -12 }}
+                animate={
+                  menuOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: -12 }
+                }
                 transition={{ duration: 0.25, delay: index * 0.04 }}
                 href={item.href}
                 onClick={closeMenu}
                 className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] px-6 py-4 text-sm font-black text-muted transition hover:border-[var(--accent)] hover:text-[var(--text)]"
+                style={{ padding: "6px" }}
               >
                 {item.label}
               </motion.a>
@@ -154,6 +157,7 @@ const Navbar = () => {
               download
               onClick={closeMenu}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--accent)] px-6 py-4 text-sm font-black text-white transition hover:bg-[var(--accent-strong)]"
+              style={{ padding: "12px" }}
             >
               <FaFileDownload />
               Download Resume
@@ -171,6 +175,7 @@ const Navbar = () => {
                     rel="noreferrer"
                     onClick={closeMenu}
                     className="inline-flex items-center justify-center gap-2 rounded-2xl border border-[var(--border)] bg-[var(--surface)] px-5 py-4 text-sm font-black text-muted transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                    style={{ padding: "12px" }}
                   >
                     <Icon />
                     {item.label}
