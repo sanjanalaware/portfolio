@@ -1,21 +1,46 @@
 import { motion } from "framer-motion";
 import {
+  FaBootstrap,
   FaCss3Alt,
   FaGitAlt,
   FaHtml5,
   FaJs,
+  FaNodeJs,
+  FaPencilRuler,
+  FaPython,
   FaReact,
+  FaServer,
+  FaCode,
 } from "react-icons/fa";
-import { SiRedux, SiTailwindcss } from "react-icons/si";
+import {
+  SiExpress,
+  SiFigma,
+  SiNetlify,
+  SiPostman,
+  SiRedux,
+  SiTailwindcss,
+  SiVercel,
+} from "react-icons/si";
 
 const skills = [
   { name: "React", group: "Frontend", level: 88, icon: FaReact },
   { name: "Redux Toolkit", group: "State", level: 78, icon: SiRedux },
   { name: "JavaScript", group: "Language", level: 84, icon: FaJs },
   { name: "Tailwind CSS", group: "Styling", level: 86, icon: SiTailwindcss },
+  { name: "Bootstrap", group: "Styling", level: 80, icon: FaBootstrap },
   { name: "HTML5", group: "Markup", level: 90, icon: FaHtml5 },
   { name: "CSS3", group: "Styling", level: 82, icon: FaCss3Alt },
+  { name: "Node.js", group: "Backend", level: 70, icon: FaNodeJs },
+  { name: "Express.js", group: "Backend", level: 68, icon: SiExpress },
+  { name: "Python", group: "Language", level: 65, icon: FaPython },
+  { name: "Vercel", group: "Deployment", level: 82, icon: SiVercel },
+  { name: "Netlify", group: "Deployment", level: 78, icon: SiNetlify },
+  { name: "Figma", group: "Design", level: 74, icon: SiFigma },
+  { name: "Adobe XD", group: "Design", level: 68, icon: FaPencilRuler },
+  { name: "Postman", group: "API Tools", level: 76, icon: SiPostman },
+  { name: "VS Code", group: "Editor", level: 88, icon: FaCode },
   { name: "Git", group: "Workflow", level: 74, icon: FaGitAlt },
+  { name: "REST APIs", group: "Integration", level: 75, icon: FaServer },
 ];
 
 const Skills = () => {

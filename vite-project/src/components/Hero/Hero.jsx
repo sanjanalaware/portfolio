@@ -79,6 +79,7 @@ const Hero = () => {
               Download Resume
             </a>
           </motion.div>
+          <div style={{ height: "12px" }}></div>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -86,10 +87,7 @@ const Hero = () => {
             className="mt-12 grid gap-5 sm:grid-cols-3"
           >
             {stats.map(([value, label]) => (
-              <div
-                key={label}
-                className="mini-card rounded-2xl backdrop-blur"
-              >
+              <div key={label} className="mini-card rounded-2xl backdrop-blur">
                 <p className="text-2xl font-black text-[var(--accent)]">
                   {value}
                 </p>

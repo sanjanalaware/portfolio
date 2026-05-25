@@ -4,20 +4,20 @@ import { FaArrowRight, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 const contacts = [
   {
     label: "Email",
-    value: "yourmail@gmail.com",
-    href: "mailto:yourmail@gmail.com",
+    value: "lawaresanjana@gmail.com",
+    href: "lawaresanjana@gmail.com",
     icon: FaEnvelope,
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/yourlinkedin",
-    href: "https://linkedin.com/in/yourlinkedin",
+    value: "https://www.linkedin.com/in/sanjana-l-2364361b2/",
+    href: "https://www.linkedin.com/in/sanjana-l-2364361b2/",
     icon: FaLinkedin,
   },
   {
     label: "GitHub",
-    value: "github.com/yourgithub",
-    href: "https://github.com/yourgithub",
+    value: "https://github.com/sanjanalaware",
+    href: "https://github.com/sanjanalaware",
     icon: FaGithub,
   },
 ];
@@ -68,8 +68,12 @@ const Contact = () => {
                   whileHover={{ x: 8 }}
                   key={contact.label}
                   href={contact.href}
-                  target={contact.href.startsWith("http") ? "_blank" : undefined}
-                  rel={contact.href.startsWith("http") ? "noreferrer" : undefined}
+                  target={
+                    contact.href.startsWith("http") ? "_blank" : undefined
+                  }
+                  rel={
+                    contact.href.startsWith("http") ? "noreferrer" : undefined
+                  }
                   className="glass-line soft-card group flex items-center gap-6 rounded-3xl"
                 >
                   <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-[var(--accent)] text-xl text-white shadow-lg shadow-teal-900/20">
