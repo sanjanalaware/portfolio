@@ -15,10 +15,8 @@ const Hero = () => {
       id="home"
       className="bg-grid relative isolate min-h-[calc(100vh-72px)] overflow-hidden py-20 sm:py-28"
     >
-      <motion.div
+      <div
         aria-hidden="true"
-        animate={{ backgroundPosition: ["0% 0%", "100% 100%"] }}
-        transition={{ duration: 18, repeat: Infinity, repeatType: "reverse" }}
         className="absolute inset-0 -z-10 bg-[linear-gradient(115deg,rgba(20,184,166,0.16),transparent_28%,rgba(245,158,11,0.12)_48%,transparent_62%,rgba(139,92,246,0.14))]"
       />
       <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-[var(--bg)] to-transparent" />
