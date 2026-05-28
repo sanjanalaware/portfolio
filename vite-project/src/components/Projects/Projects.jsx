@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import { FaArrowRight, FaBaby, FaChartLine, FaFileInvoice } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaBaby,
+  FaChartLine,
+  FaFileInvoice,
+  FaShoppingCart,
+} from "react-icons/fa";
 
 const projects = [
   {
@@ -20,6 +26,27 @@ const projects = [
     liveUrl: "https://extraedge-task-deuq.vercel.app/",
     accent: "from-violet-400 to-indigo-500",
     icon: FaChartLine,
+  },
+
+  {
+    title: "Trendora Full Stack E-Commerce Platform",
+    description:
+      "Trendora is a modern full-stack e-commerce web application built to deliver a seamless online shopping experience. The platform allows users to browse products, explore detailed product pages, manage shopping carts, and securely authenticate users. It focuses on responsive UI design, smooth user experience, scalable MERN stack backend architecture, RESTful API integration, dynamic product management, and cloud-based production deployment.",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vercel",
+      "Render",
+      "GitHub",
+    ],
+    liveUrl: "https://trendora-ecommerce-teal.vercel.app/",
+    accent: "from-emerald-400 to-sky-500",
+    icon: FaShoppingCart,
   },
 
   {
